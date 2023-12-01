@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 import type { Place } from '@/stores/place'
 
 export interface Thing {
+  id: String,
   name: String,
   place: Place | null,
   description: String
@@ -11,6 +12,7 @@ export interface Thing {
 export const useThingStore = defineStore('thing', () => {
   state: (): Thing => {
     return {
+      id: '',
       name: '',
       place: null,
       description: ''

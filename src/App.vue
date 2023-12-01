@@ -3,15 +3,6 @@ import { RouterLink, RouterView } from 'vue-router'
 import { watch, ref } from 'vue'
 import Menu from 'primevue/menu';
 
-// watch(
-//   pinia.state,
-//   (state) => {
-//     // persist the whole state to the local storage whenever it changes
-//     localStorage.setItem('piniaState', JSON.stringify(state))
-//   },
-//   { deep: true }
-// )
-
 const menu_items = ref([
   {
     label: 'Organize',
